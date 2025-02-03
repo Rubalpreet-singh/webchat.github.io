@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real-time Chat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Input area for new message -->
-    <input type="text" id="messageInput" placeholder="Type a message" />
-    <button onclick="sendMessage()">Send</button>
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <!-- Input area for new message -->
+        <input type="text" id="messageInput" placeholder="Type a message" />
+        <button onclick="sendMessage()">Send</button>
 
-    <!-- Area to display messages -->
-    <div id="messages"></div>
+        <!-- Area to display messages -->
+        <div id="messages"></div>
+    </div>
 
-    <!-- Add your Firebase script here -->
+    <!-- Firebase SDK Scripts -->
     <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js"></script>
 
-    <!-- Link to your custom script -->
+    <!-- Your custom script -->
     <script src="app.js"></script>
 </body>
 </html>
