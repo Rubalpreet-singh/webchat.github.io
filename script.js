@@ -1,6 +1,6 @@
-// Import Firebase modules
-import { initializeApp } from "firebase/app";
-import { getDatabase, ref, push, onChildAdded } from "firebase/database";
+// Import Firebase SDK (If you're using Firebase v9 or later)
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+import { getDatabase, ref, push, onChildAdded } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -17,7 +17,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Get a reference to the database
+// Get a reference to the Firebase Realtime Database
 const db = getDatabase(app);
 const messagesRef = ref(db, "messages");
 
